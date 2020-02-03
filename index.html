@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Stef van der Poel portfolio website">
+    <meta name="author" content="Stef van der Poel">
+    <meta name="theme-color" content="#000" />
+
+    <title>Stef van der Poel</title>
+
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
+
+    <!-- Plugin CSS
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"> -->
+
+    <!-- Theme CSS - Includes Bootstrap -->
+    <link href="css/ParallaxTest.css" rel="stylesheet">
+    <!-- <link href="css/creative.min.css" rel="stylesheet"> -->
+    <link href="css/basic.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript
+    <script src="vendor/jquery/jquery.min.js"></script> 
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>  -->
+
+    <!-- Plugin JavaScript
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>  -->
+        
+    <!-- Custom scripts for this template 
+    <script src="js/ParallaxCreative.js"></script>  -->
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- Parallax Site Aeria -->
+    <div class="ParallaxWrapper" id="ParallaxWrapper">
+        <div id="page-top"></div>
+        <!--- navigationbar,  js-scroll-trigger deleted from links-->
+        <nav class="ParallaxNavbar navbar-expand-lg navbar-dark ParallaxFixedTop py-2" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top" onclick="collapseNavbar()">Stef van der Poel</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" id="navbartoggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-0 my-0 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" onclick="collapseNavbar()">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" onclick="collapseNavbar()">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle Clickable" onclick="toggleDropdown()">Projects</a>
+                                <div class="dropdown-menu" id="dropdownProject">
+                                    <a class="dropdown-item nav-link" href="#devprojects" onclick="collapseNavbar()">Developer Projects</a>
+                                    <a class="dropdown-item nav-link" href="#itprojects" onclick="collapseNavbar()">System and Network engineering</a>
+                                    <a class="dropdown-item nav-link" href="#musicprojects" onclick="collapseNavbar()">Music Projects</a>
+                                </div>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" onclick="collapseNavbar()">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <!-- Parallax BackGround -->
+        <div class="ParallaxLayer Speed-1">
+            <div class="ParallaxLayer-Background01">
+                <img src="img\6502-screen07.png">
+            </div>
+            <div class="ParallaxLayer-Background01">
+                <img src="img\6502-screen07.png">
+            </div>
+            <div class="ParallaxLayer-Background01">
+                <img src="img\6502-screen07.png">
+            </div>
+            <div class="ParallaxLayer-Background01">
+                <img src="img\6502-screen07.png">
+            </div>
+            <div class="ParallaxLayer-Background01">
+                <img src="img\6502-screen07.png">
+            </div>
+            <div class="ParallaxLayer-Background01">
+                <img src="img\6502-screen07.png">
+            </div>
+        </div>
+
+
+
+
+        <!-- Content -->
+        <div class="ParallaxLayer" id="contentlayer">
+            <header class="ParallaxLayer-ContentWrap" id="home">
+                <div class="ParallaxMasthead">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-8 allign-self-end">
+                            <img src="img/StefDries01_least.jpg" class="w-75 mt-4 MastheadPicture"><img>
+                            <hr class="divider my-4">
+                        </div>
+                        <div class="col-lg-8 align-self-baseline">
+                            <p class="text-white-75 font-weight-light mt-1 mb-5">I am a communicative and creative IT professional. Besides my work I am a caring dad and a passionate musician.</p>
+                            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="ParallaxLayer-ContentWrap" id="about">
+                <div class="ParallaxContent">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h1 class="text-white">Full Stack Developer<br>System Administrator<br>Musician</h1>
+                            <hr class="divider my-4">
+                        </div>
+                        <div class="col-lg-8 align-self-baseline">
+                            <p class="text-white-75 mt-1 mb-5">I love to be challanged with complex problems. </p>
+                            <a class="btn btn-light btn-xl" href="#services">Learn more!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ParallaxLayer-ContentWrap" id="services">
+                <div class="ParallaxContent">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="text-center mt-0">At Your Service</h2>
+                            <hr class="divider my-4">
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5 Clickable" onclick="location.href='#devprojects';">
+                                <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+                                <h3 class="h4 mb-2">Full Stack Developer</h3>
+                                <p class="text-muted mb-0">Front -and Backend developer</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5 Clickable"onclick="location.href='#itprojects';">
+                                <i class="fas fa-4x fa-network-wired text-primary mb-4"></i>
+                                <h3 class="h4 mb-2">IT System Engineer</h3>
+                                <p class="text-muted mb-0">System and Network engineer</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5 Clickable" onclick="location.href='#musicprojects';">
+                                <i class="fas fa-4x fa-headphones-alt text-primary mb-4"></i>
+                                <h3 class="h4 mb-2">Musician</h3>
+                                <p class="text-muted mb-0">Music producer and Audio Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ParallaxLayer-ContentWrap" id="devprojects">
+                <div class="ParallaxContent">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="text-center mt-0">Developer Projects</h2>
+                            <hr class="divider my-4">
+                        </div>
+                        <ul class="Projects fa-ul">
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='#page-top';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-laptop-code text-primary"></i></span>
+                                        Personal webpage.
+                                    </h5>
+                                    <p class="text-white-75">My personal presentation platform</p>
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://3dcube.stefvanderpoel.nl';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-laptop-code text-primary"></i></span>
+                                        CSS 3D cube
+                                    </h5>
+                                    <p class="text-white-75">In my exploration CSS and implementing the parallax effect, I started an experiment to create a fully CSS based 3d box shape.</p>
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://MovieTrailer.stefvanderpoel.nl';">
+                                <h5>
+                                    <span><i class="fas fa-1x fa-laptop-code text-primary"></i></span>
+                                    MovieTrailer Search
+                                </h5>
+                                <p class="text-white-75">Practicing with forms and javascript xmlrequests, I created a movie search tool</p>
+                            </div>
+                        </ul>
+                        <div class="col-lg-12 text-center">
+                            <hr class="divider my-4">
+                        </div>
+                        <ul class="Projects fa-ul">
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://github.com/Stefvanderpoel';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-laptop-code text-primary"></i></span>
+                                        GitHub
+                                    </h5>
+                                </li>
+                            </div>   
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ParallaxLayer-ContentWrap" id="itprojects">
+                <div class="ParallaxContent">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="text-center mt-0">System and Network engineering</h2>
+                            <hr class="divider my-4">
+                        </div>
+                        <ul class="Projects fa-ul">
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='http://www.snv.org/';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-network-wired text-primary"></i></span>
+                                        SNV
+                                    </h5>
+                                    <p class="text-white-75">Cloud Engineer</p>
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://www.hatenboer-water.com/';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-network-wired text-primary"></i></span>
+                                        Hatenboer-water
+                                    </h5>
+                                    <ul class="Projects">
+                                        <li class="text-white-75">System Engineer</li>
+                                        <li class="text-white-75">Network Engineer</li>
+                                        <li class="text-white-75">IT Project Architect</li>
+                                        <li class="text-white-75">IT Project Implementation</li>
+                                        <li class="text-white-75">IT Project Management</li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://www.wartburg.nl/';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-network-wired text-primary"></i></span>
+                                        Wartburg college
+                                    </h5>
+                                        <ul class="Projects">
+                                            <li class="text-white-75">Microsoft SCCM engineer</li>
+                                            <li class="text-white-75">System Engineer</li>
+                                            <li class="text-white-75">Network Engineer</li>
+                                        </ul>
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://notubiz.nl/';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-network-wired text-primary"></i></span>
+                                        Notubiz
+                                    </h5>
+                                        <ul class="Projects">
+                                            <li class="text-white-75">Office 365 migration</li>
+                                            <li class="text-white-75">System Engineer</li>
+                                            <li class="text-white-75">Network Engineer</li>
+                                        </ul>
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://info.ogd.nl/';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-network-wired text-primary"></i></span>
+                                        OGD
+                                    </h5>
+                                        <ul class="Projects">
+                                            <li class="text-white-75">Co-Sourcing</li>
+                                            <li class="text-white-75">Skilled Shared ServiceDesk</li>
+                                        </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ParallaxLayer-ContentWrap" id="musicprojects">
+                <div class="ParallaxContent">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="text-center mt-0">Music Projects</h2>
+                            <hr class="divider my-4">
+                        </div>
+                        <ul class="Projects fa-ul">
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://soundcloud.com/mambatron'">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-headphones-alt text-primary"></i></span>
+                                        MambaTron
+                                    </h5>
+                                    <p class="text-white-75">Easy listening electronic music</p>                                    
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://soundcloud.com/lab-studio-jam';">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-headphones-alt text-primary"></i></span>
+                                        Lab Studio Jam
+                                    </h5>
+                                    <p class="text-white-75">In my house we occasionally host a jam session which we profesionally record and mix</p>
+                                </li>
+                            </div>
+                            <div class="col-lg-12 col-md-12 Clickable ProjectContainer" onclick="location.href='https://soundcloud.com/sonologmusic'">
+                                <li class="ProjectItem">
+                                    <h5>
+                                        <span><i class="fas fa-1x fa-headphones-alt text-primary"></i></span>
+                                        Sonolog
+                                    </h5>
+                                    <p class="text-white-75">Energetic electronic dance music with a very cool livesetup</p>                                
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ParallaxLayer-ContentWrap" id="contact">
+                <div class="ParallaxContent">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="mt-0">Let's Get In Touch!</h2>
+                            <hr class="divider my-4">
+                            <p class="text-white-75 font-weight-light mt-1 mb-5">Ready to start your with me? Send me an email and I will get back to you as soon as possible!</p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <i class="fas fa-envelope fa-3x mb-3 text-primary"></i>
+                            <!-- Make sure to change the email address in anchor text AND the link below! -->
+                            <a class="d-block" href="mailto:me@yourwebsite.com"><br>me@yourwebsite.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> 
+
+</body>
+</html>

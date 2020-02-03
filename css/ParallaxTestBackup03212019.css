@@ -1,0 +1,97 @@
+.ParallaxWrapper {
+    Position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    /* settings for parallax */
+    -webkit-perspective: 100px;
+    /* Safari 4-8 */
+    perspective: 1px;
+    perspective-origin: 50% 0%;
+}
+
+.ParallaxGroup {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    text-align: center;
+}
+
+.ParallaxLayer {
+    position: absolute;
+    top: 0;
+}
+
+.ParallaxLayer-Background01 {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateZ(-3px) scale(4);
+}
+
+.ParallaxLayer-Content01 {
+    top: 0;
+    display: flex;
+    flex: 1 0 auto;
+    z-index: 10;
+    padding: 40px;
+    margin-top: 200px;
+    background: rgba(255, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    
+    box-shadow: inset 0 0 100px blue, 0 0 50px 0 blue;
+    
+    color: white;
+    text-shadow: 0px 5px 5px blue;
+    text-align: center;
+}
+
+.ParallaxNavbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem
+}
+
+.ParallaxNavbar>.container,
+.ParallaxNavbar>.container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.ParallaxFixedTop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
