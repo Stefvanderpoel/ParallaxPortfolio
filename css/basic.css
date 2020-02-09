@@ -253,8 +253,11 @@ th {
 }
 
 label {
-    display: inline-block;
-    margin-bottom: .5rem
+    display: block;
+    margin: 0.5rem;
+    margin-top: 1.5rem;
+    
+    
 }
 
 button {
