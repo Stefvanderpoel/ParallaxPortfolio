@@ -93,6 +93,4 @@ function toggleDropdown() {
     catch (error) {
         alert("error: toggleNavbar")
     }
-    
-     
 }

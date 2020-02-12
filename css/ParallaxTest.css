@@ -546,9 +546,19 @@ ul.Projects {
 }
 
 .formSubmitWrapper {
-    width: 1rem !important;
+    width: 3rem !important;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+    border-width: 0px;
+}
+
+.divButton {
+    color: rgba(0, 0, 0, 0);
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .inputForm, .inputFormMessage {
@@ -562,4 +572,9 @@ ul.Projects {
 
 .inputFormMessage {
     height:213px !important;
+}
+
+button .formSubmitWrapper {
+    color: rgba(0, 0, 0, 0);
+
 }
