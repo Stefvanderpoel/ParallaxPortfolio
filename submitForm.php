@@ -1,29 +1,34 @@
 <?php
-    $to = 'info@stefvanderpoel.nl';
-    $from = 'form@stefvanderpoel.nl'; 
-    $subject = 'webForm notification';
-
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    
     $human = $_POST['human'];
 
-    $content = 'From: ' . $email . "\r\n" . 'Name: ' . $name . "\r\n" . 'Message: ' . $message;
+    $to = 'info@stefvanderpoel.nl';
+    $from = 'form@stefvanderpoel.nl';
+    $subject = 'webform message from ' . $name; 
 
-    $body = 'From: ' . $from . "\r\n";
+    $content = 'From: ' . $email . "\r\n" . 'Name: ' . $name . "\r\n" . "\r\n" . 'Message: ' . "\r\n" .$message;
+
+    $body = 'From: ' . $from . "\r\n" . 'Reply-To: ' . $email . "\r\n";
 ?>
 
 <?php
-    if ($_POST['submit'] && $human == '4') {				 
+if ($name != '' && $email != '') {
+    if ($human == '4') {				 
         if (mail($to, $subject, $content, $body)) { 
-	    echo '<p>Your message has been sent!</p>';
+            echo 'Your message has been sent!';
         } 
         else { 
-	    echo '<p>Something went wrong, go back and try again!</p>'; 
-	    } 
+            echo 'Something went wrong, go back and try again'; 
+        } 
     } 
-    else if ($_POST['submit'] && $human != '4') {
-	echo '<p>You answered the anti-spam question incorrectly!</p>';
+    else if ($human != '4') {
+        echo 'You answered the anti-spam question incorrectly';
     }
+}
+else {
+    echo 'You need to fill in all required fields';
+}
+
 ?>

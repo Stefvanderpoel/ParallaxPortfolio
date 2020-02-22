@@ -94,3 +94,27 @@ function toggleDropdown() {
         alert("error: toggleNavbar")
     }
 }
+
+function submitFormAjax(contact) {
+
+    // create XMLHttpRequest
+    let xmlhttp = new XMLHttpRequest();
+    
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            alert(this.responseText); // Here is the response
+        }
+    }
+
+    // get input data from form
+    let name = contact.name.value;
+    let email = contact.email.value;
+    let message = contact.message.value;
+    let human = contact.human.value;
+
+    xmlhttp.open('POST','submitForm.php',true);
+    xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xmlhttp.send("name=" + name + "&email=" + "&email=" + email + "&message=" + message + "&human=" + human);
+    
+    return false; // makes the page not reload after the form submission
+}

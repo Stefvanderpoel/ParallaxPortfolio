@@ -364,23 +364,23 @@
                             <p class="text-white-75 font-weight-light mt-1 mb-2">Do you need my services? Send me an email and I will get back to you as soon as possible!</p>
                         </div>
                         <div class="col-lg-12 text-center">
-                            <form class="text-white-75 font-weight-light w-75 m-auto" method="post" action="submitForm.php">
+                            <form class="text-white-75 font-weight-light w-75 m-auto" id="contact" method="post" onsubmit="return submitFormAjax(this)" action="">
             
                                 <label>Name</label>
-                                <input class="inputForm" name="name" placeholder="Type Here">
+                                <input class="inputForm" name="name" id="name" placeholder="Type Here">
                                         
                                 <label>Email</label>
-                                <input class="inputForm" name="email" type="email" placeholder="Type Here">
+                                <input class="inputForm" name="email" id="email" type="email" placeholder="Type Here">
                                         
                                 <label>Message</label>
-                                <textarea class="inputFormMessage" name="message" placeholder="Type Here"></textarea>
+                                <textarea class="inputFormMessage" name="message" id="message" placeholder="Type Here"></textarea>
 
                                 <label>*What is 2+2? (Anti-spam)</label>
-                                <input class="inputForm" name="human" placeholder="Type Here">
+                                <input class="inputForm" name="human" id="human" placeholder="Type Here">
                                 
                                 <br/>
 
-                                <button class="formSubmitWrapper divButton text-center mt-4 Clickable" id="submit" name="submit" type="submit" value="submit">
+                                <button class="formSubmitWrapper divButton text-center mt-4 Clickable" name="submit" id="submit" type="submit">
                                     <i class="fas fa-envelope fa-3x text-primary"></i>
                                     <p class="text-white-75 font-weight-light">Submit</p>
                                 </button>
