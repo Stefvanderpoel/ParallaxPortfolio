@@ -9,9 +9,9 @@ http://tangledindesign.com/how-to-create-a-contact-form-using-html5-css3-and-php
 
 ## Let the form be able to mail
 
-The PHP mail() function sends mail in the most simple smpt way possible. As a result the webserver is sending smtp mail and this its IP is not listed in SPF let alone dkim records.
+The PHP mail() function sends enables simple smpt mail sending in PHP scripts. As a result the server on which the php script is hosted is sending the smtp mail. But the webserver is not listed in SPF records let alone setup for dkim and dmarc.
 
-I will probably need a more sofisticated way of sending mail than the php mail() function. Since I am making use of a webservice I willnot be able to install frameworks or extensions.
+I would like to use a more sofisticated way of sending mail than the php mail() function. But I am making use of a webservice so I will not be able to install frameworks or extensions.
 
 According to my webhosting service provider it is possible to send mail from the webserver coming the same website domain as the mailadres (the mail adres of the domain).
 
@@ -145,6 +145,21 @@ I have added some simple optimizations, but I do not think this is enought. Ther
 https://wordpress.org/plugins/all-in-one-seo-pack/
 
 Check out what they do and implement.
+
+## Cross Browser testing
+
+I created a free subscription at https://www.lambdatest.com/. I can now, limited by time and test occurences, check the website appearance on several systems. My main concern is the Safari browser on IOS. I do not own a newer version iPhone or Ipad. On a new IOS device of a friend I saw that the Parallax effect was not functioning. The background was moving in the same speed as the foreground layers. 
+
+### IOS Safari
+
+The HTML5 smooth scroll function is not working on all tested versions
+
+#### 12.4
+
+- Looks good
+
+
+
 
 
 
