@@ -141,10 +141,28 @@ So now I have a form that mails me and informs the user what's up.
 
 ## SEO search engine optimization
 
+
+### SEO optimization
+
 I have added some simple optimizations, but I do not think this is enought. There are wordpress plugins available that do this for you.
 https://wordpress.org/plugins/all-in-one-seo-pack/
 
-Check out what they do and implement.
+Todo:Check out what they do and implement.
+I did de research and followed steps. Basically telling the search engine to start looking for my website. For this you need accounts for:
+- Google: https://search.google.com/search-console
+- Yandex: https://webmaster.yandex.com/
+- Bingsearch: https://www.bing.com/webmaster
+These tools also have diagnistic tools which can help correcting little errors. Keep in mind that it can take some time for the page to be indexed (days). All the corrections (changes) that are made will take some time to be picked up by the search indexing bots.
+
+### Meta tag enhancement
+
+After optimizing the SEO, google showed a search result on my name on the first page. I also saw that the little text snippet shown in the search result was not what I wanted. It returned my very short <meta name="description" content=""> tag and added the name of my background image as well.. I did some research and found out that you can optimize your meta description. There are rules about the length and I tried to follow them:
+https://moz.com/learn/seo/meta-description
+
+
+
+
+
 
 ## Cross Browser testing
 
